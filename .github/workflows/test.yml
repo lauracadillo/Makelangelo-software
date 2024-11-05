@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        min-heap-free-ratio: [ 20, 30 ]  # Different values for MinHeapFreeRatio
 
     steps:
     - uses: actions/checkout@v4
@@ -20,8 +23,7 @@ jobs:
 
     - name: Build and Test with Maven
       timeout-minutes: 15
-
-      run: ./mvnw -B verify -DargLine="-XX:MinHeapFreeRatio=35"
+      run: ./mvnw -B verify
 
     - name: Get JaCoCo Coverage
       id: coverage  
