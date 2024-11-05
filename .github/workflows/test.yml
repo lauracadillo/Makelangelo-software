@@ -12,9 +12,10 @@ jobs:
       matrix:
         flag:
           - { name: "MinHeapFreeRatio", value: "20" }
-          - {name: "MaxHeapFreeRatio", value: "80"}
-          - { name: "UseSerialGC", value: "true" }
-       
+          - { name: "MaxHeapFreeRatio", value: "80"}
+          - { name: "UseParallelGC", value: "true" }
+          - { name: "GCTimeRatio", value: "20" }
+          - { name: "GCTimeLimit", value: "90" }
 
     steps:
     - uses: actions/checkout@v4
