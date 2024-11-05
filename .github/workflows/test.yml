@@ -10,9 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        min-heap-free-ratio: [ 20, 30 ]  # Different values for MinHeapFreeRatio
-        max-heap-free-ratio: [ 80 ]  # Different values for MinHeapFreeRatio
-        max-ram-percentage: [50]
+        flag:
+          - { name: "MinHeapFreeRatio", value: "20" }
+          - {name: "MaxHeapFreeRatio", value: "80"}
+          - { name: "UseSerialGC", value: "true" }
+       
 
     steps:
     - uses: actions/checkout@v4
