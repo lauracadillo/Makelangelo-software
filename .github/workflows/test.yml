@@ -12,7 +12,7 @@ jobs:
       matrix:
         flag:
           - { name: "MinHeapFreeRatio", value: "20" }
-          - { name: "MaxHeapFreeRatio", value: "80"}
+          - { name: "PrintCompilation", value: "true"}
           - { name: "UseParallelGC", value: "true" }
           - { name: "GCTimeRatio", value: "20" }
           - { name: "GCTimeLimit", value: "90" }
