@@ -20,9 +20,8 @@ jobs:
 
     - name: Build and Test with Maven
       timeout-minutes: 15
-      env:
-        MAVEN_OPTS: "-XX:MinHeapFreeRatio=35"
-      run: ./mvnw -B verify
+
+      run: ./mvnw -B verify -DargLine="-XX:MinHeapFreeRatio=35"
 
     - name: Get JaCoCo Coverage
       id: coverage  
