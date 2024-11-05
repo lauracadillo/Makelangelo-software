@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        min-heap-free-ratio: [ 20 ]  # Different values for MinHeapFreeRatio
+        min-heap-free-ratio: [ 20, 30 ]  # Different values for MinHeapFreeRatio
         max-heap-free-ratio: [ 80 ]  # Different values for MinHeapFreeRatio
 
     steps:
