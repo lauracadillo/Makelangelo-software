@@ -15,7 +15,7 @@ jobs:
           - { name: "PrintCompilation", value: "true"}
           - { name: "UseParallelGC", value: "true" }
           - { name: "GCTimeRatio", value: "20" }
-          - { name: "GCTimeLimit", value: "90" }
+          - { name: "UseStringDeduplication", value: "true" }
 
     steps:
     - uses: actions/checkout@v4
