@@ -11,6 +11,7 @@ jobs:
     strategy:
       matrix:
         min-heap-free-ratio: [ 20, 30 ]  # Different values for MinHeapFreeRatio
+        max-heap-free-ratio: [ 90, 80 ]  # Different values for MinHeapFreeRatio
 
     steps:
     - uses: actions/checkout@v4
