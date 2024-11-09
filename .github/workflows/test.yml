@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         flag:
-          - { name: "MinHeapFreeRatio", value: "20" }
+          - { name: "MinHeapFreeRatio", value: "50" }
           - { name: "PrintCompilation", value: "true"}
           - { name: "UseParallelGC", value: "true" }
           - { name: "GCTimeRatio", value: "20" }
