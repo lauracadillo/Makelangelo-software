@@ -57,10 +57,16 @@
     </ul>
 
 
-    <h2> UseParallelGC</h2>
+    <h2> ThreadStackSize</h2>
     <ul>
-        <p>
-           .</p>
+        <p>La réduction de la taille de ThreadStackSize peut être utile pour
+            optimiser la gestion de la mémoire. Par exemple dans les
+            applications à forte concurrence, où un grand nombre de threads
+            sont créés, une taille de pile importante pour chaque thread peut
+            consommer une quantité excessive de mémoire. En réduisant la taille
+            de la pile, on économise de la mémoire pour chaque thread, ce qui
+            permet de gérer un plus grand nombre de threads simultanément sans
+            épuiser les ressources du système.</p>
 
 
     </ul>
