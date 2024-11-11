@@ -16,6 +16,7 @@ jobs:
           - { name: "UseParallelGC", value: "true" }
           - { name: "GCTimeRatio", value: "20" }
           - { name: "UseStringDeduplication", value: "true" }
+          - { name: "ThreadStackSize", value: "1024" }
 
     steps:
     - uses: actions/checkout@v4
