@@ -72,10 +72,19 @@
     </ul>
 
 
-    <h2> GCTimeRatio</h2>
+    <h2> UseParallelGC</h2>
 
     <ul>
-        <p>
+        <p>Changer la valeur par défaut de UseParallelGC de false à true a pour
+            but d’améliorer les performances des applications Java sur les
+            systèmes modernes. Le Garbage Collector parallèle (Parallel GC)
+            utilise plusieurs threads pour traiter la collecte de la mémoire
+            en parallèle, ce qui permet de réduire la durée des pauses dues
+            au garbage collection. Cela est particulièrement efficace pour
+            tirer parti des ressources CPU disponibles. Le Parallel GC est
+            conçu pour maximiser le débit de l’application, c’est-à-dire la
+            quantité de travail qu’elle peut traiter dans un laps de temps
+            donné. Ce changement vise à offrir de meilleures performances.
             </p>
 
     </ul>
