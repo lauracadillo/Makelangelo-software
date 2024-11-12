@@ -92,8 +92,16 @@
 
     <h2>UseStringDeduplication</h2>
     <ul>
-
-        <p>.</p>
+        <p>En changeant la valeur de UseStringDeduplication par défaut de false
+            à true permet de réduire l’utilisation de la mémoire et d’améliorer
+            les performances globales en collaboration avec le G1 GC.
+            En dédupliquant ces chaînes, le JVM peut diminuer significativement
+            la consommation de mémoire. En remplaçant les chaînes de caractères
+            dupliquées par une seule instance partagée, UseStringDeduplication
+            réduit la fragmentation de la mémoire, ce qui permet une utilisation
+            plus efficace de la mémoire. Cela est particulièrement avantageux
+            pour les applications qui traitent de grandes quantités de données
+            textuelles.</p>
 
 
 
